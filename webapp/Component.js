@@ -14,8 +14,6 @@ sap.ui.define(
   (Component, ObjectPath, Log, MessageToast) => {
     "use strict";
 
-    // alternatively add configuration parameter in backend
-    // and obtain via `this.getComponentData().config`
     const FIFTEEN_MINUTES = 900000;
 
     return Component.extend("com.mrb.timeout.Component", {
@@ -28,6 +26,8 @@ sap.ui.define(
        * @override
        */
       init() {
+        // retrieve config parameters
+        this._config = this.getComponentData().config || {};
         /** @type {sap.base.i18n.ResourceBundle} */
         this._i18n = this.getModel("i18n").getResourceBundle();
         /** @type {sap.base.Log} */
@@ -46,7 +46,7 @@ sap.ui.define(
             // remove message toast in productive use
             MessageToast.show(this._i18n.getText("errorMessage"));
           });
-        }, FIFTEEN_MINUTES);
+        }, this._config.timeout || FIFTEEN_MINUTES);
 
         // Use below code for anything UI related.
         //
