@@ -12,8 +12,10 @@ sap.ui.define(
    * @param {sap.m.MessageToast} MessageToast
    */
   (Component, ObjectPath, Log, MessageToast) => {
+    "use strict";
 
     // alternatively add configuration parameter in backend
+    // and obtain via `this.getComponentData().config`
     const FIFTEEN_MINUTES = 900000;
 
     return Component.extend("com.mrb.timeout.Component", {
@@ -47,6 +49,10 @@ sap.ui.define(
         }, FIFTEEN_MINUTES);
 
         // Use below code for anything UI related.
+        //
+        // Obtain plugin parameters from backend
+        // const pluginParameters = this.getComponentData().config;
+        //
         // this._oShellContainer = null;
         // const rendererPromise = this._getRenderer();
         // rendererPromise.then((renderer) => {
