@@ -70,7 +70,12 @@ sap.ui.define(
        * @override
        */
       exit() {
-        clearInterval(this._interval);
+        if (this._oShellContainer && this._onRendererCreated) {
+          this._oShellContainer.detachRendererCreatedEvent(this._onRendererCreated);
+        }
+        if (this._interval) {
+          clearInterval(this._interval);
+        }
       },
 
       /**
