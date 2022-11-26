@@ -6,6 +6,10 @@ For the purpose or using this Repository as a starting point at any time, I've k
 
 This Plug-In is supposed to keep the FLP sessions alive by sending small (HTTP HEAD) requests in an interval to the SAP system. Be aware though that before using something like Plug-In development to do this, there are various ways to go about this. One approach could be using the native "Gateway Time-Out Warning" settings explained [here](https://www.saptechnicalguru.com/setting-fiori-gateway-time-out-and-time-out-warning/). Also mentioned in SAP OSS Note [3248472](https://launchpad.support.sap.com/#/notes/3248472) and [2955208](https://launchpad.support.sap.com/#/notes/2955208).
 
+## Activate & Configure the Plug-In
+
+It'd be basically the same as described [here](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/d58602924af34fc3816d44ddb6a9e911.html?locale=en-US#activating-and-configuring-the-example-ui-plug-in).
+
 ## Open Question
 
 I'm not sure how exactly to '[Make sure that your plug-in is robust if more than one instance is loaded](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/1b305d3e6b864e32a9464a13f3076b8b.html?locale=en-US#make-sure-that-your-plug-in-is-robust-if-more-than-one-instance-is-loaded)'. Is it something that is done from within the Plug-In scope itself or do we have to go into the window scope here (i.e. the "sap-ushell-config"?)
@@ -37,3 +41,4 @@ This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
   - [Language Switch](https://blogs.sap.com/2017/05/24/allow-users-to-switch-language-in-the-fiori-launchpad-using-ui-plugins/)
   - [HeaderItem (Renderer) Config](https://blogs.sap.com/2019/08/12/fiori-launchpad-plugin-extension-with-headeritem-disappears-solution-and-configuration-options/)
   - [XSA Config](https://blogs.sap.com/2020/03/04/xsa-fiori-launchpad-on-premise-configuration-with-sap-fiori-launchpad-plugins/)
+  - [Example Plugin with UI (by SAP)](https://ui5.sap.com/test-resources/sap/ushell/demoapps/UIPluginSampleAddHeaderItems/Component.js)
