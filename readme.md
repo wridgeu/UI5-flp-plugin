@@ -28,6 +28,9 @@ Implementation based on this [SO Answer](https://stackoverflow.com/a/66147223/10
 
 This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
 
+> Note: Some links are BW4HANA related as I find this version of the documentation way better (it even includes an interactive image!). Be aware of the platform differences when opening the links.
+
+- [Extending the Launchpad](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/56e9328978954c77946b75c0976f221c.html?locale=en-US)
 - [SAP Fiori Launchpad Documentation (Developing Plug-Ins)](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/cc03f57993f54a969f3c6a9d59b6d3f0.html?locale=en-US)
 - [How are Plug-Ins loaded into the FLP?](https://blogs.sap.com/2018/12/12/how-it-works-sap-fiori-launchpad-plugins/)
 - [Promisify `_getRenderer`](https://stackoverflow.com/a/66147223/10323879)
