@@ -1,0 +1,62 @@
+{
+  "_version": "1.36.0",
+  "sap.app": {
+    "id": "com.mrb.timeout",
+    "type": "component",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{pluginTitle}}",
+    "description": "{{pluginDescription}}",
+    "crossNavigation": {
+      "inbounds": {
+        "Shell-plugin": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "Shell",
+          "action": "plugin",
+          "hideLauncher": true
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": ["sap_horizon", "sap_horizon_dark"]
+  },
+  "sap.ui5": {
+    "contentDensities": {
+      "compact": true,
+      "cozy": false
+    },
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.mrb.timeout.i18n.i18n",
+          "supportedLocales": ["en"],
+          "fallbackLocale": "en"
+        }
+      }
+    },
+    "componentName": "com.mrb.timeout"
+  },
+  "sap.flp": {
+    "type": "plugin",
+    "config": {}
+  }
+}

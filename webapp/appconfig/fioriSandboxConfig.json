@@ -1,0 +1,9 @@
+{
+	"applications": {},
+	"bootstrapPlugins": {
+		"timeout": {
+			"component": "com.mrb.timeout",
+			"url": "../../../../../"
+		}
+	}
+}
