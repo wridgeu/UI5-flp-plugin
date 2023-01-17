@@ -12,7 +12,7 @@ It'd be basically the same as described [here](https://help.sap.com/docs/ABAP_PL
 
 ## Open Question
 
-I'm not sure how exactly to '[Make sure that your plug-in is robust if more than one instance is loaded](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/1b305d3e6b864e32a9464a13f3076b8b.html?locale=en-US#make-sure-that-your-plug-in-is-robust-if-more-than-one-instance-is-loaded)'. Is it something that is done from within the Plug-In scope itself or do we have to go into the window scope here (i.e. the "sap-ushell-config"?)
+I'm not sure how to '[Make sure that your plug-in is robust if more than one instance is loaded](https://help.sap.com/docs/ABAP_PLATFORM_BW4HANA/a7b390faab1140c087b8926571e942b7/1b305d3e6b864e32a9464a13f3076b8b.html?locale=en-US#make-sure-that-your-plug-in-is-robust-if-more-than-one-instance-is-loaded)'. Is it something that is done from within the Plug-In scope itself or do we have to go into the window scope here (i.e. the "sap-ushell-config"?). You'd have to take a look into the SAP Standard plugins or other comparable ones.
 
 As the docs state:
 > Even if your plug-in implementation is a singleton by nature, multiple instances might be created due to configuration, and your plug-in must be able to handle this in a robust way.
